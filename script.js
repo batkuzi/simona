@@ -2,7 +2,7 @@
 // LOVE STORY - SIMONA ❤️
 // script.js
 // ================================
-
+console.log("НОВИЯТ SCRIPT Е ЗАРЕДЕН");
 
 // Елементи
 
