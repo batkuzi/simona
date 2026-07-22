@@ -8,7 +8,7 @@
 
 const startBtn = document.getElementById("startBtn");
 const story = document.getElementById("story");
-const music = document.getElementById("music");
+
 
 
 // Стартиране на историята
@@ -29,13 +29,7 @@ startBtn.addEventListener("click", () => {
         story.classList.add("show");
 
 
-        // Пускаме музиката
 
-        music.play().catch(() => {
-
-            console.log("Музиката чака разрешение от браузъра.");
-
-        });
 
 
     }, 1200);
