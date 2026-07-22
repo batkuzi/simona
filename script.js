@@ -20,6 +20,27 @@ startBtn.addEventListener("click", () => {
     document.querySelector(".intro").classList.add("fade-out");
 
 
+    setTimeout(() => {
+
+        document.querySelector(".intro").style.display = "none";
+
+        story.classList.remove("hidden");
+
+        story.classList.add("show");
+
+
+        // Пускаме музиката
+
+        music.play().catch(() => {
+
+            console.log("Музиката чака разрешение от браузъра.");
+
+        });
+
+
+    }, 1200);
+
+
 });
 
 
