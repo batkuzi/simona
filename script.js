@@ -13,27 +13,23 @@ const story = document.getElementById("story");
 
 // Стартиране на историята
 
+const startBtn = document.getElementById("startBtn");
+const story = document.getElementById("story");
+const intro = document.querySelector(".intro");
+
+
 startBtn.addEventListener("click", () => {
 
-    // Скриваме началния екран
-
-    document.querySelector(".intro").classList.add("fade-out");
-
+    intro.classList.add("fade-out");
 
     setTimeout(() => {
 
-        document.querySelector(".intro").style.display = "none";
+        intro.style.display = "none";
 
         story.classList.remove("hidden");
-
         story.classList.add("show");
 
-
-
-
-
     }, 1200);
-
 
 });
 
