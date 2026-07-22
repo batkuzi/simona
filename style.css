@@ -1,0 +1,221 @@
+/* =========================
+   SIMONA - 6 MONTHS WEBSITE
+   style.css
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+/* INTRO SCREEN */
+
+.intro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro-content {
+    animation: fadeIn 2s ease;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    margin-bottom: 35px;
+}
+
+
+button {
+    background: #fff;
+    color: #ff6f91;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    background: #ffe6eb;
+}
+
+
+
+/* STORY SECTION */
+
+#story {
+    display: none;
+    padding: 40px 20px;
+}
+
+
+.story-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.story-container h2 {
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+}
+
+
+.story-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 30px auto;
+    max-width: 750px;
+}
+
+
+
+/* MONTH SECTIONS */
+
+.month {
+    margin: 70px 0;
+}
+
+
+.month-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+.photo {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 25px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    transition: transform 0.5s ease;
+}
+
+
+.photo:hover {
+    transform: scale(1.04);
+}
+
+
+/* HEART EFFECT */
+
+.heart {
+    font-size: 40px;
+    margin: 20px;
+    animation: pulse 1.5s infinite;
+}
+
+
+
+/* FINAL MESSAGE */
+
+.final {
+    margin-top: 80px;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 30px;
+}
+
+
+.final h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+
+.final p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .intro h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+
+    .story-container h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .month-title {
+        font-size: 1.6rem;
+    }
+
+
+    .story-text {
+        font-size: 1.05rem;
+    }
+
+}
