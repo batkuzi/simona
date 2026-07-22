@@ -29,15 +29,6 @@ startBtn.addEventListener("click", () => {
         story.classList.add("show");
 
 
-        // Пускаме музиката
-
-        music.play().catch(() => {
-
-            console.log("Музиката чака разрешение от браузъра.");
-
-        });
-
-
     }, 1);
 
 
