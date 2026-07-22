@@ -6,9 +6,6 @@ console.log("НОВИЯТ SCRIPT Е ЗАРЕДЕН");
 
 // Елементи
 
-const startBtn = document.getElementById("startBtn");
-const story = document.getElementById("story");
-
 
 
 // Стартиране на историята
